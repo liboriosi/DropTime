@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutEsqueceuSenha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsqueceuSenhaFragment">
+
+    <Button
+        android:id="@+id/esqueceuSenhaBackButton"
+        android:layout_width="59dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FFFFFF"
+        app:icon="?attr/homeAsUpIndicator"
+        app:iconTint="#9E000A"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEsqueceuSenhaTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <TextView
+        android:id="@+id/textViewEsqueceuSenhaTitle"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/esqueceu_a_senha_title"
+        android:textColor="#2E3E4B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEsqueceuSenhaDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/informe_seu_e_mail_e_enviaremos_os_pr_ximos_passos_para_recuperar_sua_conta"
+        android:textColor="#2E3E4B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEsqueceuSenhaTitle"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewEsqueceuSenhaEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/digite_seu_e_mail_label"
+        android:textColor="#2E3E4B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEsqueceuSenhaDescription" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldCelular"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/digite_seu_e_mail"
+        android:textColorHint="#BEC3C7"
+        app:boxBackgroundColor="#2BF42F04"
+        app:boxStrokeColor="#00FFFFFF"
+        app:boxStrokeWidth="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEsqueceuSenhaEmail"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/esqueceuSenhaButtonAcessar"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#AD000B"
+        android:text="@string/confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
