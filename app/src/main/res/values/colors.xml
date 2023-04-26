@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+	<color name="colorPrimary">#008577</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="colorFonteCinza">#2E3E4B</color>
+	<color name="colorCinza">#D7D7D7</color>
+	<color name="colorVermelhoPrincipal">#9E000A</color>
+	<color name="colorCinzaFundo">#BEC3C7</color>
+	<color name="colorVermelhoLogin">#F42F04</color>
+
 </resources>
