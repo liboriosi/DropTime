@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@color/colorVermelhoPrincipal">
+
+            <RelativeLayout
+                android:id="@+id/group_181"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="52dp"
+                tools:ignore="UselessParent">
+
+
+                <RelativeLayout
+                    android:id="@+id/logo_rocket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/rocket"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/rocket"
+                        tools:ignore="ImageContrastCheck"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/logo_ringunfilled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="330dp">
+
+                    <ImageView
+                        android:id="@+id/ringunfilled"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/todo1"
+                        android:src="@drawable/ringunfilled"
+                        tools:ignore="ImageContrastCheck" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:textColor="@color/colorFonteCinza"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:text="@string/carrinho_string"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/vector" />
+
+        <RelativeLayout
+            android:id="@+id/info_pizza"
+            android:layout_width="394dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="190dp"
+            android:background="@color/colorVermelhoPrincipal">
+
+            <RelativeLayout
+                android:id="@+id/fundo_main"
+                android:layout_width="378dp"
+                android:layout_height="108dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorCinza"
+                tools:ignore="TextSizeCheck">
+
+                <ImageView
+                    android:id="@+id/foto_pizza"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/todo7"
+                    android:src="@drawable/foto_pizza" />
+
+                <TextView
+                    android:id="@+id/n_pedido"
+                    android:layout_width="53dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="@string/n_do_pedido__string"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/__0001"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="20.52dp"
+                    android:gravity="center"
+                    android:text="@string/_0001_string"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorVermelhoPrincipal"
+                    android:textSize="6sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,TextSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/r_65_00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:text="@string/r_65_00_string"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/pizza_grande"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="@string/pizza_grande_string"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/_35cm_12_pedacos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center"
+                    android:text="@string/_35cm_12_pedaços_string"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,TextSizeCheck" />
+
+
+                <RelativeLayout
+                    android:id="@+id/group_174"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="107dp"
+                    android:layout_marginTop="55dp"
+                    tools:ignore="TextSizeCheck">
+
+                    <TextView
+                        android:id="@+id/sabor_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/sabor_1_string"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/icon_sabor_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/sabor_1_ek1_string"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/sabor_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/sabor_1_ek2_string"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/sabor_1_ek3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="165dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/sabor_1_ek3_string"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,TextSizeCheck" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_16"
+                    android:layout_width="200dp"
+                    android:layout_height="0.2dp"
+                    android:layout_marginStart="107dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonConfirmar"
+            android:layout_width="500dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="585dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:text="@string/confirmar"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/colorVermelhoPrincipal"
+            tools:ignore="VisualLintButtonSize" />
+
+        <RelativeLayout android:id="@+id/bar"
+            android:layout_marginTop="670dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorCinzaFundo">
+
+            <RelativeLayout android:id="@+id/rectangle_161"
+                android:layout_marginTop="-57dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="VisualLintBounds">
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/profile"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="340dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/icon_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/profile"
+                    android:contentDescription="@string/vector2"
+                    tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/pizza"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/icon_pizza"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/pizza"
+                    android:contentDescription="@string/vector"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/cart"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="190dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/icon_cart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cart"
+                    android:contentDescription="@string/vector_ek6"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

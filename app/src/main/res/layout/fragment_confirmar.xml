@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/content_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:ignore="MissingConstraints,UselessParent">
+
+		<RelativeLayout
+			android:id="@+id/header"
+			android:layout_width="match_parent"
+			android:layout_height="105dp"
+			android:background="@color/colorVermelhoPrincipal">
+
+			<RelativeLayout
+				android:id="@+id/group_181"
+				android:layout_width="352dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="52dp"
+				tools:ignore="UselessParent">
+
+
+				<RelativeLayout
+					android:id="@+id/logo_rocket"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<ImageView
+						android:id="@+id/rocket"
+						android:layout_width="30dp"
+						android:layout_height="30dp"
+						android:contentDescription="@string/todo"
+						android:src="@drawable/rocket"
+						tools:ignore="ImageContrastCheck" />
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:id="@+id/logo_ringunfilled"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="330dp">
+
+					<ImageView
+						android:id="@+id/ringunfilled"
+						android:layout_width="30dp"
+						android:layout_height="30dp"
+						android:contentDescription="@string/todo1"
+						android:src="@drawable/ringunfilled"
+						tools:ignore="ImageContrastCheck" />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+		<TextView
+		android:id="@+id/carrinho"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|center"
+		android:layout_marginTop="120dp"
+		android:gravity="center"
+		android:textColor="@color/colorFonteCinza"
+		android:textSize="35sp"
+		android:textStyle="bold"
+		android:text="@string/carrinho_string"/>
+
+	<Button
+		android:layout_width="20dp"
+		android:layout_height="35dp"
+		android:layout_marginTop="130dp"
+		android:layout_marginStart="18dp"
+		android:background="@drawable/vector" />
+
+
+		<RelativeLayout
+			android:id="@+id/valores"
+			android:layout_width="394dp"
+			android:layout_height="160dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginTop="180dp"
+			android:layout_marginEnd="20dp"
+			android:background="@color/colorCinzaFundo"
+			tools:ignore="TextSizeCheck">
+
+			<TextView
+				android:id="@+id/valores_principal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginTop="0dp"
+				android:gravity="center"
+				android:text="@string/valores_string"
+				android:textColor="@color/black"
+				android:textSize="30sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/valor_total_do_pedido_"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="50dp"
+				android:text="@string/valor_total_do_pedido_string"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="14sp"
+				android:textStyle="bold" />
+
+			<View
+				android:id="@+id/line_16"
+				android:layout_width="300dp"
+				android:layout_height="0.2dp"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="73dp"
+				android:background="@color/black" />
+
+			<TextView
+				android:id="@+id/valor_total_no_pix"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="75dp"
+				android:text="@string/valor_total_no_pix_string"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="12sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/_economize_5_00_"
+				android:layout_width="wrap_content"
+				android:layout_height="13dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="95dp"
+				android:gravity="center"
+				android:text="@string/economize_RS_5_00_string"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="8sp"
+				tools:ignore="SmallSp,TextSizeCheck" />
+
+			<View
+				android:id="@+id/line_17"
+				android:layout_width="300dp"
+				android:layout_height="0.2dp"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="110dp"
+				android:background="@color/black" />
+
+			<TextView
+				android:id="@+id/valor_total_no_cartao"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="115dp"
+				android:gravity="center"
+				android:text="@string/valor_total_no_cartao_string"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="12sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/em_ate_10x_de_r_7_00_"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="135dp"
+				android:gravity="center"
+				android:text="@string/em_até_10x_de_r_7_00"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="8sp"
+				tools:ignore="SmallSp" />
+
+			<TextView
+				android:id="@+id/r_65_00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="255dp"
+				android:layout_marginTop="50dp"
+				android:gravity="center"
+				android:text="@string/r_65_00_string"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="14sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/r_65_00_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="245dp"
+				android:layout_marginTop="80dp"
+				android:gravity="center"
+				android:text="@string/r_65_00_string"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/r_70_00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="245dp"
+				android:layout_marginTop="115dp"
+				android:gravity="center"
+				android:text="@string/r_70_00_string"
+				android:textColor="@color/colorFonteCinza"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/info_pizza"
+			android:layout_width="394dp"
+			android:layout_height="230dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:layout_marginTop="360dp"
+			android:background="@color/colorCinzaFundo">
+
+			<TextView
+				android:id="@+id/metodos_de_pagamento_"
+				android:layout_width="260dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginTop="10dp"
+				android:gravity="center"
+				android:layout_marginStart="60dp"
+				android:text="@string/metodos_de_pagamento_string"
+				android:textColor="@color/black"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/metodos_de_pagamento_1"
+				android:layout_width="320dp"
+				android:layout_height="55dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="40dp"
+				android:background="@color/colorVermelhoPrincipal"
+				android:gravity="center"
+				android:text="@string/cartao_de_credito_string"
+				android:textColor="#9E9E9E"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/metodos_de_pagamento_2"
+				android:layout_width="320dp"
+				android:layout_height="55dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="100dp"
+				android:background="@color/colorVermelhoPrincipal"
+				android:gravity="center"
+				android:text="@string/cartao_de_debito_string"
+				android:textColor="#9E9E9E"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/metodos_de_pagamento_3"
+				android:layout_width="320dp"
+				android:layout_height="55dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="160dp"
+				android:background="@color/colorVermelhoPrincipal"
+				android:gravity="center"
+				android:text="@string/pix_string"
+				android:textColor="#9E9E9E"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+
+			</RelativeLayout>
+
+		<RelativeLayout android:id="@+id/bar"
+			android:layout_marginTop="670dp"
+			android:layout_marginStart="0dp"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:background="@color/colorCinzaFundo">
+
+			<RelativeLayout android:id="@+id/rectangle_161"
+				android:layout_marginTop="-57dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:ignore="VisualLintBounds">
+
+			</RelativeLayout>
+
+			<RelativeLayout android:id="@+id/profile"
+				android:layout_marginTop="16dp"
+				android:layout_marginStart="340dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:id="@+id/icon_profile"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:background="@drawable/profile"
+					android:contentDescription="@string/vector2"
+					tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+			</RelativeLayout>
+
+			<RelativeLayout android:id="@+id/pizza"
+				android:layout_marginTop="16dp"
+				android:layout_marginStart="40dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:id="@+id/icon_pizza"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:background="@drawable/pizza"
+					android:contentDescription="@string/vector"
+					tools:ignore="TouchTargetSizeCheck" />
+
+			</RelativeLayout>
+
+			<RelativeLayout android:id="@+id/cart"
+				android:layout_marginTop="16dp"
+				android:layout_marginStart="190dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:id="@+id/icon_cart"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:background="@drawable/cart"
+					android:contentDescription="@string/vector_ek6"
+					tools:ignore="TouchTargetSizeCheck" />
+
+			</RelativeLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
