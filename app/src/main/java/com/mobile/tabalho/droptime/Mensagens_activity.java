@@ -70,7 +70,7 @@ public class Mensagens_activity extends Activity {
 		
 			public void onClick(View v) {
 				
-				Intent nextScreen = new Intent(getApplicationContext(), homescreen_activity.class);
+				Intent nextScreen = new Intent(getApplicationContext(), exportkit.figma.home_screen_activity.class);
 				startActivity(nextScreen);
 			
 		
