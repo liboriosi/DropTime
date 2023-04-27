@@ -15,33 +15,19 @@
 	<color name="colorVermelhoPrincipal">#9E000A</color>
 	<color name="colorCinzaFundo">#BEC3C7</color>
 	<color name="colorVermelhoLogin">#F42F04</color>
-
 	<color name="_bg__message_screen_color">#FFFFFF</color>
-
 	<color name="mensagens_color">#2E3E4B</color>
-
 	<color name="rectangle_161_ek1_color">#D9D9D9</color>
-
 	<color name="rectangle_159_color">#D7D7D7</color>
-
 	<color name="rectangle_155_color">#9E000A</color>
-
 	<color name="seu_pedido_est__pronto_____color">#000000</color>
-
 	<color name="_bg__my_requests_screen_color">#FFFFFF</color>
-
 	<color name="meus_pedidos_color">#2E3E4B</color>
-
 	<color name="rectangle_160_color">#D7D7D7</color>
-
 	<color name="rectangle_156_color">#9E000A</color>
-
 	<color name="n_do_pedido__color">#000000</color>
-
 	<color name="_bg__my_account_screen_color">#FFFFFF</color>
-
 	<color name="minha_conta_color">#2E3E4B</color>
-
 	<color name="henrique_zimermann_color">#000000</color>
 
 </resources>
