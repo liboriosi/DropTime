@@ -32,13 +32,10 @@ public class Perfil_activity extends Activity {
 	private View _bg__my_account_screen;
 	private Button btmensagem;
 	private Button btminhaconta;
-	private View rectangle;
-	private ImageView vector;
-	private ImageView exclude;
-	private View rectangle_156;
-	private ImageView vector_ek1;
-	private ImageView _vector_ek2;
-	private View rectangle_160;
+
+	private Button bthome;
+	private Button btpedido;
+
 	private ImageView ellipse_6;
 	private TextView henrique_zimermann;
 	private TextView henriquezimermann_edu_univali_br;
@@ -52,6 +49,10 @@ public class Perfil_activity extends Activity {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_perfil);
+
+		btpedido = (Button) findViewById(R.id.icon_cart);
+		bthome = (Button) findViewById(R.id.icon_pizza);
+		btminhaconta = (Button) findViewById(R.id.icon_profile);
 
 		
 	
@@ -72,7 +73,16 @@ public class Perfil_activity extends Activity {
 		
 			}
 		});
+		btpedido.setOnClickListener(new View.OnClickListener() {
 
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
 		btminhaconta.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
@@ -83,7 +93,18 @@ public class Perfil_activity extends Activity {
 
 			}
 		});
-		
+		bthome.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), tela_inicial_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+
+
 		//custom code goes here
 	
 	}

@@ -22,6 +22,7 @@ import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.content.Intent;
 import android.widget.TextView;
@@ -33,6 +34,10 @@ public class Pedidos_activity extends Activity {
 	private View rectangle;
 	private ImageView vector;
 	private ImageView _exclude;
+	private Button btminhaconta;
+
+	private Button bthome;
+	private Button btpedido;
 	private TextView meus_pedidos;
 	private View rectangle_160;
 	private View rectangle_156;
@@ -61,16 +66,21 @@ public class Pedidos_activity extends Activity {
 
 		
 
+		btpedido = (Button) findViewById(R.id.icon_cart);
+		bthome = (Button) findViewById(R.id.icon_pizza);
+		btminhaconta = (Button) findViewById(R.id.icon_profile);
+
 		meus_pedidos = (TextView) findViewById(R.id.meus_pedidos);
 
-		n_do_pedido_ = (TextView) findViewById(R.id.n_do_pedido_);
-		__0001 = (TextView) findViewById(R.id.__0001);
-		r__65_00 = (TextView) findViewById(R.id.r__65_00);
-		pexels_rene_strgar_13814644_2 = (ImageView) findViewById(R.id.pexels_rene_strgar_13814644_2);
-		pizza_grande = (TextView) findViewById(R.id.pizza_grande);
-		_35cm___12_peda_os = (TextView) findViewById(R.id._35cm___12_peda_os);
-		sabor_1___sabor_2___sabor_3 = (TextView) findViewById(R.id.sabor_1___sabor_2___sabor_3);
-		status_do_pedido__finalizado = (TextView) findViewById(R.id.status_do_pedido__finalizado);
+
+//		n_do_pedido_ = (TextView) findViewById(R.id.n_do_pedido_);
+//		__0001 = (TextView) findViewById(R.id.__0001);
+//		r__65_00 = (TextView) findViewById(R.id.r__65_00);
+//		pexels_rene_strgar_13814644_2 = (ImageView) findViewById(R.id.pexels_rene_strgar_13814644_2);
+//		pizza_grande = (TextView) findViewById(R.id.pizza_grande);
+//		_35cm___12_peda_os = (TextView) findViewById(R.id._35cm___12_peda_os);
+//		sabor_1___sabor_2___sabor_3 = (TextView) findViewById(R.id.sabor_1___sabor_2___sabor_3);
+//		status_do_pedido__finalizado = (TextView) findViewById(R.id.status_do_pedido__finalizado);
 
 	
 		
@@ -78,13 +88,42 @@ public class Pedidos_activity extends Activity {
 		
 			public void onClick(View v) {
 				
-				Intent nextScreen = new Intent(getApplicationContext(), exportkit.figma.home_screen_activity.class);
+				Intent nextScreen = new Intent(getApplicationContext(), tela_inicial_activity.class);
 				startActivity(nextScreen);
 			
 		
 			}
 		});
-		
+		btpedido.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		btminhaconta.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), Perfil_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		bthome.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), tela_inicial_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
 
 		
 		

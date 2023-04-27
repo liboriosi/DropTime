@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:lineSpacingExtra="4sp"
-        android:text="@string/informe_seu_e_mail_e_enviaremos_os_pr_ximos_passos_para_recuperar_sua_conta"
+        android:text="@string/recuperar_conta"
         android:textColor="#2E3E4B"
         android:textSize="16sp"
         android:textStyle="bold"

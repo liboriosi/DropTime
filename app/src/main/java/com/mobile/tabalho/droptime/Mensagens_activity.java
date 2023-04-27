@@ -21,6 +21,7 @@ import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.content.Intent;
 import android.widget.TextView;
@@ -32,6 +33,10 @@ public class Mensagens_activity extends Activity {
 	private View rectangle;
 	private ImageView vector;
 	private ImageView _exclude;
+	private Button btminhaconta;
+
+	private Button bthome;
+	private Button btpedido;
 	private TextView mensagens;
 	private View rectangle_161_ek1;
 	private ImageView vector_ek1;
@@ -63,21 +68,44 @@ public class Mensagens_activity extends Activity {
 		seu_pedido_j__pode_ser_retirado_na_recep__o_do_estabelecimento = (TextView) findViewById(R.id.seu_pedido_j__pode_ser_retirado_na_recep__o_do_estabelecimento);
 		__0001 = (TextView) findViewById(R.id.__0001);
 		n_do_pedido_ = (TextView) findViewById(R.id.n_do_pedido_);
+		btpedido = (Button) findViewById(R.id.icon_cart);
+		bthome = (Button) findViewById(R.id.icon_pizza);
+		btminhaconta = (Button) findViewById(R.id.icon_profile);
 
 	
 		
-		_exclude.setOnClickListener(new View.OnClickListener() {
-		
+
+
+		btpedido.setOnClickListener(new View.OnClickListener() {
+
 			public void onClick(View v) {
-				
-				Intent nextScreen = new Intent(getApplicationContext(), exportkit.figma.home_screen_activity.class);
+
+				Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
 				startActivity(nextScreen);
-			
-		
+
+
 			}
 		});
-		
-		
+		btminhaconta.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), Perfil_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		bthome.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), tela_inicial_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
 		//custom code goes here
 	
 	}

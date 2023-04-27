@@ -19,7 +19,7 @@
     <string name="informe_seu_e_mail_e_crie_uma_senha">Informe seu e-mail e crie uma senha:</string>
     <string name="cadastre_se">Cadastre-se</string>
     <string name="esqueceu_a_senha_title">Esqueceu a senha?</string>
-    <string name="informe_seu_e_mail_e_enviaremos_os_pr_ximos_passos_para_recuperar_sua_conta">Informe seu e-mail e enviaremos os próximos passos para recuperar sua conta:</string>
+    <string name="recuperar_conta">Informe seu e-mail e enviaremos os próximos passos para recuperar sua conta:</string>
     <string name="digite_seu_e_mail_label">Digite seu E-mail:</string>
     <string name="confirmar">Confirmar</string>
     <string name="informa_es_pessoais">Informações Pessoais</string>
@@ -75,7 +75,6 @@
     <string name="valor_total_no_cartao_string">Valor total no cartão</string>
     <string name="valor_total_do_pedido_string">Valor total do Pedido:</string>
     <string name="em_até_10x_de_r_7_00">(em até 10x de R$7,00)</string>
-    valor_total_no_pix_string
     <string name="valor_total_no_pix_string">Valor total no PIX</string>
     <string name="economize_RS_5_00_string">(Economize R$5,00)</string>
     <string name="todo">TODO</string>
@@ -94,26 +93,17 @@
     <string name="vector4">vector</string>
     <string name="ek_img_content">ExportKit Image</string>
     <string name="mensagens_string">Mensagens</string>
-    <string name="seu_pedido_est__pronto_____string">Seu Pedido est Pronto !!!</string>
-    <string name="seu_pedido_j__pode_ser_retirado_na_recep__o_do_estabelecimento_string">Seu Pedido j pode ser retirado na recepo do estabelecimento </string>
+    <string name="seu_pedido_est__pronto_____string">Seu Pedido está Pronto !!!</string>
+    <string name="pedido_pronto_string">Seu Pedido já pode ser retirado na recepção do estabelecimento </string>
     <string name="__0001_string">#0001</string>
     <string name="h__2_min__string">H 2 min.</string>
-
     <string name="meus_pedidos_string">Meus Pedidos</string>
-
     <string name="r__65_00_string">R$ 65,00</string>
-
-
     <string name="_35cm___12_peda_os_string">35cm - 12 pedaos</string>
-
     <string name="sabor_1___sabor_2___sabor_3_string">Sabor 1 - Sabor 2 - Sabor 3</string>
-
     <string name="status_do_pedido__finalizado_string">Status do Pedido:Finalizado</string>
-
     <string name="minha_conta_string">Minha Conta</string>
-
     <string name="henrique_zimermann_string">Henrique Zimermann</string>
-
     <string name="henriquezimermann_edu_univali_br_string">henriquezimermann@edu.univali.br</string>
     <string name="dados_string">Dados Pessoais</string>
     <string name="atendimento_string">Atendimento</string>

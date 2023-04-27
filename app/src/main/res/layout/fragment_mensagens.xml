@@ -118,7 +118,7 @@
 				android:layout_marginLeft="-2dp"
 				android:layout_marginTop="82dp"
 				android:gravity="center"
-				android:text="@string/seu_pedido_j__pode_ser_retirado_na_recep__o_do_estabelecimento_string"
+				android:text="@string/pedido_pronto_string"
 				android:textColor="@color/_bg__message_screen_color"
 				android:textSize="12sp"
 				android:textStyle="bold" />
