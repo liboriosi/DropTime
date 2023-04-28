@@ -45,7 +45,7 @@ public class tela_inicial_activity extends Activity {
 		
 			public void onClick(View v) {
 				
-				Intent nextScreen = new Intent(getApplicationContext(), tela_sabores_activity.class);
+				Intent nextScreen = new Intent(tela_inicial_activity.this, tela_sabores_activity.class);
 				startActivity(nextScreen);
 			
 		
