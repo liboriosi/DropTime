@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,8 +20,7 @@ public class LoginActivity extends Activity {
 
     private Button btacessar;
     private Button btcadastrar;
-
-
+    private TextView btesqueceusenha;
 
 
     public LoginActivity() {
@@ -32,13 +32,14 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_login);
 
-        btacessar = (Button)findViewById(R.id.loginButtonAcessar);
+        btacessar = (Button) findViewById(R.id.loginButtonAcessar);
         btcadastrar = (Button) findViewById(R.id.loginButtonCadastrar);
+        btesqueceusenha = (TextView) findViewById(R.id.textViewLoginEsqueceuSenha);
         btacessar.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
 
-                Intent nextScreen = new Intent(LoginActivity.this, tela_carrinho_activity.class);
+                Intent nextScreen = new Intent(LoginActivity.this, tela_inicial_activity.class);
                 startActivity(nextScreen);
 
 
@@ -54,19 +55,19 @@ public class LoginActivity extends Activity {
 
             }
         });
+        btesqueceusenha.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
+                Intent nextScreen = new Intent(LoginActivity.this, EsqueceuSenhaActivity.class);
+                startActivity(nextScreen);
+
+
+            }
+        });
 
 
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -17,43 +17,27 @@ package com.mobile.tabalho.droptime;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ImageView;
 
 public class tela_confirmar_activity extends Activity {
 
-	
-	private View _bg__name_screen;
-	private View rectangle_163;
-	private TextView m_todos_de_pagamento_;
-	private View rectangle_155;
-	private TextView cart_o_de_cr_dito;
-	private ImageView unfilled_ek1;
-	private View rectangle_155_ek1;
-	private TextView cart_o_de_d_bito;
-	private ImageView unfilled_ek3;
-	private View rectangle_154;
-	private TextView pix;
-	private ImageView unfilled_ek5;
-	private View rectangle_159;
-	private TextView valor_total_no_cart_o;
-	private TextView __em_at__10x_de_r_7_00_;
-	private TextView valor_total_no_pix;
-	private TextView __economize__5_00_;
-	private TextView r__65_00;
-	private TextView r__65_00_ek1;
-	private TextView r__70_00;
-	private TextView valor_total_do_pedido_;
-	private TextView valores;
-	private TextView pagamento;
-	private View rectangle_161_ek1;
-	private ImageView vector;
-	private ImageView vector_ek1;
-	private ImageView vector_ek2;
+	private Button btpedido;
+	private Button bthome;
+	private Button btminhaconta;
+
+	private Button btpag1;
+	private Button btpag2;
+	private Button btpag3;
+
+
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -61,9 +45,81 @@ public class tela_confirmar_activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_confirmar);
 
-		
 
-	
+		btpedido = (Button) findViewById(R.id.icon_cart);
+		bthome = (Button) findViewById(R.id.icon_pizza);
+		btminhaconta = (Button) findViewById(R.id.icon_profile);
+		btpag1 = (Button) findViewById(R.id.metodos_de_pagamento_1);
+		btpag2	 = (Button) findViewById(R.id.metodos_de_pagamento_2);
+		btpag3 = (Button) findViewById(R.id.metodos_de_pagamento_3);
+
+
+
+
+
+
+		btpedido.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		btminhaconta.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), Perfil_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		bthome.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), tela_inicial_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		btpag1.setOnClickListener(new View.OnClickListener() {
+
+				public void onClick(View v) {
+
+					Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
+					startActivity(nextScreen);
+
+
+				}
+			});
+		btpag2.setOnClickListener(new View.OnClickListener() {
+
+				public void onClick(View v) {
+
+					Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
+					startActivity(nextScreen);
+
+
+				}
+			});
+		btpag3.setOnClickListener(new View.OnClickListener() {
+
+				public void onClick(View v) {
+
+					Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
+					startActivity(nextScreen);
+
+
+				}
+			});
+
+
 		
 		//custom code goes here
 	

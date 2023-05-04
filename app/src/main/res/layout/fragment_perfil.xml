@@ -149,7 +149,7 @@
 		android:layout_marginTop="250dp">
 
 		<Button
-			android:id="@+id/buttonPedidos"
+			android:id="@+id/buttonPerfilPedidos"
 			android:layout_width="320dp"
 			android:layout_height="55dp"
 			android:layout_gravity="center_horizontal|center"
@@ -163,7 +163,7 @@
 			android:background="@color/colorVermelhoPrincipal"/>
 
 		<Button
-			android:id="@+id/buttonMensagens"
+			android:id="@+id/buttonPerfilMensagens"
 			android:layout_width="320dp"
 			android:layout_height="55dp"
 			android:layout_gravity="center_horizontal|center"
@@ -177,7 +177,7 @@
 			android:background="@color/colorVermelhoPrincipal"/>
 
 		<Button
-			android:id="@+id/buttonDadosPessoais"
+			android:id="@+id/buttonPerfilDadosPessoais"
 			android:layout_width="320dp"
 			android:layout_height="55dp"
 			android:layout_gravity="center_horizontal|center"
@@ -191,10 +191,10 @@
 			android:background="@color/colorVermelhoPrincipal"/>
 
 		<Button
-			android:id="@+id/buttonEndereco"
+			android:id="@+id/buttonPerfilEndereco"
 			android:layout_width="320dp"
 			android:layout_height="55dp"
-			android:layout_below="@+id/buttonDadosPessoais"
+			android:layout_below="@+id/buttonPerfilDadosPessoais"
 			android:layout_gravity="center_horizontal|center"
 			android:layout_marginStart="30dp"
 			android:layout_marginTop="5dp"
@@ -210,7 +210,7 @@
 			android:id="@+id/buttonAtendimento"
 			android:layout_width="320dp"
 			android:layout_height="55dp"
-			android:layout_below="@+id/buttonEndereco"
+			android:layout_below="@+id/buttonPerfilEndereco"
 			android:layout_gravity="center_horizontal|center"
 			android:layout_marginStart="30dp"
 			android:layout_marginTop="5dp"
@@ -223,7 +223,7 @@
 			android:textStyle="bold" />
 
 		<Button
-			android:id="@+id/buttonSair"
+			android:id="@+id/buttonPerfilSair"
 			android:layout_width="320dp"
 			android:layout_height="55dp"
 			android:layout_below="@+id/buttonAtendimento"
