@@ -5,7 +5,7 @@
     android:id="@+id/frameLayoutEsqueceuSenha"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EsqueceuSenhaFragment">
+    tools:context=".EsqueceuSenhaActivity">
 
     <Button
         android:id="@+id/esqueceuSenhaBackButton"

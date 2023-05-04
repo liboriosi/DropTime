@@ -1,5 +1,6 @@
 package com.mobile.tabalho.droptime;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -14,35 +15,30 @@ import android.widget.Button;
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
  */
-public class LoginFragment extends Fragment {
+public class LoginActivity extends Activity {
 
     private Button btacessar;
     private Button btcadastrar;
-    public LoginFragment() {
+
+
+
+
+    public LoginActivity() {
         // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
+        setContentView(R.layout.fragment_login);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-
-
-
-        btacessar = (Button) container.findViewById(R.id.loginButtonAcessar);
-        btcadastrar = (Button) container.findViewById(R.id.loginButtonCadastrar);
-
-
+        btacessar = (Button)findViewById(R.id.loginButtonAcessar);
+        btcadastrar = (Button) findViewById(R.id.loginButtonCadastrar);
         btacessar.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
 
-                Intent nextScreen = new Intent(getActivity(), tela_carrinho_activity.class);
+                Intent nextScreen = new Intent(LoginActivity.this, tela_carrinho_activity.class);
                 startActivity(nextScreen);
 
 
@@ -52,14 +48,25 @@ public class LoginFragment extends Fragment {
 
             public void onClick(View v) {
 
-                Intent nextScreen = new Intent(getActivity(), CadastroFragment.class);
+                Intent nextScreen = new Intent(LoginActivity.this, CadastroActivity.class);
                 startActivity(nextScreen);
 
 
             }
         });
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false);
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 }
