@@ -35,14 +35,9 @@ public class Perfil_activity extends Activity {
 
 	private Button bthome;
 	private Button btpedido;
-
-	private ImageView ellipse_6;
-	private TextView henrique_zimermann;
-	private TextView henriquezimermann_edu_univali_br;
-	private View rectangle_161_ek1;
-	private ImageView vector_ek3;
-	private ImageView vector_ek4;
-	private ImageView vector_ek5;
+	private Button btdados;
+	private Button btsair;
+	private Button btmeuspedidos;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -53,15 +48,11 @@ public class Perfil_activity extends Activity {
 		btpedido = (Button) findViewById(R.id.icon_cart);
 		bthome = (Button) findViewById(R.id.icon_pizza);
 		btminhaconta = (Button) findViewById(R.id.icon_profile);
+		btdados = (Button) findViewById(R.id.buttonPerfilDadosPessoais);
+		btmensagem = (Button) findViewById(R.id.buttonPerfilMensagens);
+		btsair = (Button) findViewById(R.id.buttonPerfilSair);
+		btmeuspedidos = (Button) findViewById(R.id.buttonPerfilPedidos);
 
-		
-	
-		btminhaconta = (Button) findViewById(R.id.buttonDadosPessoais);
-		btmensagem = (Button) findViewById(R.id.buttonMensagens);
-		ellipse_6 = (ImageView) findViewById(R.id.ellipse_6);
-		henrique_zimermann = (TextView) findViewById(R.id.henrique_zimermann);
-		henriquezimermann_edu_univali_br = (TextView) findViewById(R.id.henriquezimermann_edu_univali_br);
-	
 		
 		btmensagem.setOnClickListener(new View.OnClickListener() {
 		
@@ -73,6 +64,7 @@ public class Perfil_activity extends Activity {
 		
 			}
 		});
+
 		btpedido.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
@@ -98,6 +90,36 @@ public class Perfil_activity extends Activity {
 			public void onClick(View v) {
 
 				Intent nextScreen = new Intent(getApplicationContext(), tela_inicial_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		btdados.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), DadosUsuarioActivity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		btsair.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), LoginActivity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		btmeuspedidos.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
 				startActivity(nextScreen);
 
 

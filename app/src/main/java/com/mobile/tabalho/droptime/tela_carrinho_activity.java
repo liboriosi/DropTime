@@ -35,6 +35,7 @@ public class tela_carrinho_activity extends Activity {
 
 	private Button bthome;
 	private Button btpedido;
+	private Button btconfirmar;
 
 
 	@Override
@@ -47,14 +48,15 @@ public class tela_carrinho_activity extends Activity {
 		btpedido = (Button) findViewById(R.id.icon_cart);
 		bthome = (Button) findViewById(R.id.icon_pizza);
 		btminhaconta = (Button) findViewById(R.id.icon_profile);
-	
+		btconfirmar = (Button) findViewById(R.id.buttonCarrinhoConfirmar);
+
 		
 		//custom code goes here
 		btpedido.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
 
-				Intent nextScreen = new Intent(getApplicationContext(), Pedidos_activity.class);
+				Intent nextScreen = new Intent(tela_carrinho_activity.this, Pedidos_activity.class);
 				startActivity(nextScreen);
 
 
@@ -64,7 +66,7 @@ public class tela_carrinho_activity extends Activity {
 
 			public void onClick(View v) {
 
-				Intent nextScreen = new Intent(getApplicationContext(), Perfil_activity.class);
+				Intent nextScreen = new Intent(tela_carrinho_activity.this, Perfil_activity.class);
 				startActivity(nextScreen);
 
 
@@ -74,7 +76,17 @@ public class tela_carrinho_activity extends Activity {
 
 			public void onClick(View v) {
 
-				Intent nextScreen = new Intent(getApplicationContext(), tela_inicial_activity.class);
+				Intent nextScreen = new Intent(tela_carrinho_activity.this, tela_inicial_activity.class);
+				startActivity(nextScreen);
+
+
+			}
+		});
+		btconfirmar.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(tela_carrinho_activity.this, tela_confirmar_activity.class);
 				startActivity(nextScreen);
 
 
