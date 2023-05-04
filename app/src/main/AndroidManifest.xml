@@ -13,14 +13,65 @@
         android:theme="@style/Theme.DropTime"
         tools:targetApi="31">
         <activity
-            android:name=".tela_inicial_activity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".tela_inicial_activity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".tela_sabores_activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".tela_escolha_activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".tela_confirmar_activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".tela_carrinho_activity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".Perfil_activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Pedidos_activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Mensagens_activity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DadosUsuarioActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".EsqueceuSenhaActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>
